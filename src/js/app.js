@@ -110,3 +110,10 @@ document.addEventListener('click', function (e) {
     bodyEl.classList.remove('hidden');
   }
 });
+
+// close menu in Landing page
+$(document).on("click", ".header__nav-list li a", function (e) {
+  $('.headerCatalog').removeClass('active');
+  $('body').removeClass('hidden');
+ 
+});
