@@ -1,0 +1,90 @@
+<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-2 col-md-4">
+        <div class="d-flex align-items-center gap-4">
+          <button class="headerMenuBtn">
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="toggle">
+              <div class="top-bun"></div>
+              <div class="meat"></div>
+              <div class="bottom-bun"></div>
+            </div><!-- /Hamburger Menu -->
+            <span class="headerMenuText d-none d-lg-block">Меню</span>
+          </button>
+          <div class="socials d-none d-lg-block">
+            <ul class="socialsList d-flex">
+              <li class="socialsItem">
+                <a href="#" class="socialsLink"><img src="@img/admin/socials/whatsapp.svg" alt="icon"></a>
+              </li>
+              <li class="socialsItem">
+                <a href="#" class="socialsLink"><img src="@img/admin/socials/telegram.svg" alt="icon"></a>
+              </li>
+            </ul>
+          </div><!-- /socials -->
+        </div>
+
+      </div>
+      <div class="col-8 col-md-4">
+        <a href="#" class="headerLogo Logo">
+          <img src="@img/admin/header/logo.svg" alt="logo">
+        </a>
+      </div>
+      <div class="col-2 col-md-4">
+        <button class="btn btn--white btn--sm headerBtn" data-toggle="modal" data-target="#modalOrder">
+          <img src="@img/btn/btn-icon.svg" alt="icon">
+          <span class="d-none d-lg-block"> Оставить заявку</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="headerCatalog" style="background-image: url('@img/admin/header/catalog-bg.png');">
+    <div class="container d-flex justify-content-between flex-column">
+
+      <div class="d-block">
+        <div class="d-flex justify-content-between">
+          <button class="headerCatalogClose btn btn--sm btn--white">
+            <img src="@img/icons/close-icon.svg" alt="close">
+            <span class="headerMenuText d-none d-lg-block">Меню</span>
+          </button>
+          <button class="btn btn--white btn--sm headerBtnMenu d-flex d-lg-none" data-toggle="modal"
+            data-target="#modalOrder">
+            <img src="@img/btn/btn-icon.svg" alt="icon">
+            Оставить заявку
+          </button>
+        </div>
+
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="#">Об аппарате</a></li>
+            <li><a href="#">Окупаемость</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Мероприятия</a></li>
+            <li><a href="#">Мы в СМИ</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="headerCatalogSocials">
+        <a href="#" class="headerCatalogSocial">
+          <img src="@img/admin/socials/whatsapp.svg" alt="icon">
+          <span>Написать в WhatsApp</span>
+        </a>
+        <a href="#" class="headerCatalogSocial">
+          <img src="@img/admin/socials/telegram.svg" alt="icon">
+          <span>Написать в Telegram</span>
+        </a>
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+</header>

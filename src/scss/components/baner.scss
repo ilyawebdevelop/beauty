@@ -1,0 +1,19 @@
+.baner {
+  background-color: #FEFAF8;
+  background-position: right center;
+  background-repeat: no-repeat;
+  // background-size: cover;
+  padding-top: 103px;
+  padding-bottom: 103px;
+  &Title {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 500;
+    max-width: 500px;
+    span {
+      color: #D8835E;
+    }
+  }
+}

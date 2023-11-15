@@ -1,0 +1,51 @@
+// Footer
+.footer {
+  background-color: #D8835E;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  color: #000;
+  &Item {
+    margin-bottom: 20px;
+  }
+  h4 {
+    color: #000;
+    margin-bottom: 18px;
+  }
+  h5 {
+    color: #000;
+  }
+  &Contacts {
+    font-size: 13px;
+    h5 {
+      margin-bottom: 8px;
+    }
+  }
+  &Socials {
+    margin-top: 22px;
+    margin-bottom: 35px;
+    &List {
+      display: flex;
+      column-gap: 10px;
+    }
+    &Link {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &Content {
+    font-size: 13px;
+    line-height: 150%;
+  }
+  .linkText {
+    font-size: 13px;
+    line-height: 150%;
+    
+  }
+}

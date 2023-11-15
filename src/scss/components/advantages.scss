@@ -1,0 +1,6 @@
+.advantages {
+  padding-top: 0;
+  .contentCard.accordionItem p {
+    max-width: calc(100% - 40px);
+  }
+}

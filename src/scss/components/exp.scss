@@ -1,0 +1,41 @@
+.exp {
+  &Title {
+    max-width: 500px;
+  }
+  &Card {
+    background: #D8835E;
+    color: #FEFAF8;
+    border-radius: 20px;
+    padding: 45px 49px 40px 49px;
+    font-weight: 500;
+    min-height: 308px;
+    font-size: 21px;
+    line-height: 31px;
+    span {
+      color: #000;
+    }
+
+  }
+  &Nav {
+    column-gap: 20px;
+    display: flex;
+    &W {
+      margin-top: 18px;
+    }
+    &Title {
+      font-style: italic;
+      font-weight: 500;
+      color: #D8835E;
+      font-size: 21px;
+      line-height: 31px;
+    }
+  }
+  &Slide {
+    img {
+      height: 308px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}

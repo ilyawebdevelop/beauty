@@ -1,0 +1,144 @@
+// modal
+.modal {
+  &-header {
+    padding: 45px;
+    padding-bottom: 25px;
+    border-bottom: none;
+  }
+
+  &-body {
+    padding: 45px;
+    padding-top: 0;
+  }
+
+  &-title {
+    font-size: 23px;
+  }
+}
+
+.modalNews {
+  &Content {
+    padding: 40px 33px 65px 39px;
+    border-radius: 40px;
+    border: none;
+  }
+
+  &Title {
+    color: #000;
+  }
+
+  .modalDate {
+    color: #000;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .modal-dialog {
+    max-width: 100%;
+  }
+  &Grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 360px auto;
+  }
+  &Img {
+    border-radius: 40px;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .btn-close {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 1;
+    transition: background-color .2s linear;
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 20px;
+    }
+
+    &:hover {
+      background-color: #D8835E;
+      opacity: 1;
+    }
+  }
+  .contentText {
+    padding-left: 40px;
+    padding-right: 40px;
+    p {
+      color: #000;
+    }
+    a {
+      color: #069;
+      display: inline-block;
+    }
+  }
+}
+
+.modalHeadW {
+  column-gap: 20px;
+}
+
+.modalHead {
+  max-width: 880px;
+}
+.modalOrder {
+  &Descr {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+  &Content {
+    background-color: #000;
+    border-radius: 40px;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-bottom: 55px;
+    padding-top: 40px;
+  }
+  .modal-dialog {
+    max-width: 800px;
+  }
+  .callback {
+    color: #D8835E;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+  .btn-close {
+    background-color: #fff;
+    opacity: 1;
+    background-image: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    transition: background-color .2s linear;
+    box-sizing: border-box;
+    &:hover {
+      background-color: #D8835E;
+    }
+  }
+}
+#modalTry {
+  .sectionTitle {
+    margin-bottom: 0;
+  }
+}
