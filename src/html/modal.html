@@ -6,17 +6,23 @@
     <div class="container">
       <div class="modalNewsContent modal-content">
         <div class="d-flex modalHeadW justify-content-between">
-          <div class="d-block modalHead">
+          <div class="d-none d-xl-block modalHead">
             <h4 class="modalNewsTitle mb-2">Вебинар «Привлечение клиентов в салон красоты: разбор кейсов»</h4>
             <span class="modalDate">12 октября 2023</span>
           </div>
           <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-            <img src="@img/icons/close-icon.svg" alt="close">
+            <img class="d-none d-xl-flex" src="@img/icons/close-icon.svg" alt="close">
+            <img class="d-flex d-xl-none" src="@img/icons/closeBrown.svg" alt="close">
           </button>
         </div>
         <div class="modalNewsGrid">
           <img class="modalNewsImg" src="@img/admin/news/image-2.png" alt="image">
+
           <div class="contentText">
+            <div class="d-block d-xl-none modalHead mb-4">
+              <h4 class="modalNewsTitle mb-2">Вебинар «Привлечение клиентов в салон красоты: разбор кейсов»</h4>
+              <span class="modalDate">12 октября 2023</span>
+            </div>
             <p>
               Дорогие партнеры, рады сообщить, что снова проведем вебинар по маркетингу в бьюти бизнесе с приглашенным
               экспертом!
@@ -43,7 +49,9 @@
             <p>
               Участие в вебинаре бесплатно для членов Клуба Beauty Systems, а также для подписчиков Клуба мастеров
               лазерной эпиляции в Телеграмме. Вступайте в сообщество профессионалов и пользуйтесь всеми привилегиями
-              Клуба по ссылке: <a href="#">https://web.telegram.org/k/#@Lazernaya_epilyaciya</a>
+              Клуба по ссылке: <a class="d-none d-sm-inline-block"
+                href="#">https://web.telegram.org/k/#@Lazernaya_epilyaciya</a> <a class="d-inline-block d-sm-none"
+                href="#">https://web.telegram.org/k/ #@Lazernaya_epilyaciya</a>
             </p>
           </div>
         </div>
@@ -57,35 +65,35 @@
 <div class="modal fade modalOrder" id="modalOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
   <div class="modal-dialog modal-dialog-centered">
-    <div class="container">
-      <div class="modalOrderContent modal-content">
-        <h2 class="sectionTitle text-center">Оставить заявку</h2>
 
-        <div class="modalOrderForm">
-          <div class="inputW">
-            <input type="text" class="formInput" placeholder="Ваше имя">
-          </div>
-          <div class="inputW">
-            <input type="email" class="formInput" placeholder="Email">
-          </div>
-          <div class="inputW">
-            <input type="tel" class="formInput" placeholder="Телефон">
-          </div>
-          <div class="inputW">
-            <textarea class="formText" name="formText" id="formText" cols="30" rows="10"
-              placeholder="Сообщение"></textarea>
-          </div>
-          <button class="formBtn btn btn--brown btn--lg">Отправить</button>
-          <div class="callback">Наш менеджер свяжется с&nbsp;вами в&nbsp;ближайшее время для уточнения деталей.</div>
+    <div class="modalOrderContent modal-content">
+      <h2 class="sectionTitle text-start text-sm-center">Оставить заявку</h2>
+
+      <div class="modalOrderForm">
+        <div class="inputW">
+          <input type="text" class="formInput" placeholder="Ваше имя">
         </div>
-
-
-
-        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-          <img src="@img/icons/close-icon.svg" alt="close">
-        </button>
+        <div class="inputW">
+          <input type="email" class="formInput" placeholder="Email">
+        </div>
+        <div class="inputW">
+          <input type="tel" class="formInput" placeholder="Телефон">
+        </div>
+        <div class="inputW">
+          <textarea class="formText" name="formText" id="formText" cols="30" rows="10"
+            placeholder="Сообщение"></textarea>
+        </div>
+        <button class="formBtn btn btn--brown btn--lg">Отправить</button>
+        <div class="callback">Наш менеджер свяжется с&nbsp;вами в&nbsp;ближайшее время для уточнения деталей.</div>
       </div>
+
+
+
+      <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+        <img src="@img/icons/close-icon.svg" alt="close">
+      </button>
     </div>
+
   </div>
 
 </div>
@@ -96,8 +104,8 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="container">
       <div class="modalOrderContent modal-content">
-        <h2 class="sectionTitle text-center">Записаться</h2>
-        <p class="modalOrderDescr text-center">на пробную процедуру</p>
+        <h2 class="sectionTitle text-start text-sm-center">Записаться</h2>
+        <p class="modalOrderDescr  ext-start text-sm-center">на пробную процедуру</p>
 
         <div class="modalOrderForm">
           <div class="inputW">
@@ -108,7 +116,7 @@
           </div>
           <div class="inputW">
             <input type="tel" class="formInput" placeholder="Телефон">
-          </div>         
+          </div>
           <button class="formBtn btn btn--brown btn--lg">Отправить</button>
           <div class="callback">Наш менеджер свяжется с&nbsp;вами в&nbsp;ближайшее время для уточнения деталей.</div>
         </div>

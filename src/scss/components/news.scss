@@ -1,6 +1,9 @@
 .newsSliderW {
   padding-bottom: 60px;
   padding-top: 60px;
+  @media(max-width: 991px){
+    padding-bottom: 35px;
+  }
 }
 
 .news {
@@ -8,12 +11,19 @@
 
   &Slider {
     overflow: visible;
+    @media(max-width: 575px){
+      padding-right: 60px;
+    }
   }
 
   &Slide {
     height: auto;
     display: grid;
     grid-template-rows: 380px auto;
+
+    @media(max-width: 1199px) {
+      height: 100%;
+    }
 
     &Image {
       img {
@@ -42,8 +52,13 @@
       width: fit-content;
       margin-bottom: 18px;
     }
+
     &Text {
       margin-bottom: 18px;
+      @media(max-width: 991px){
+        font-size: 13px;
+        line-height: 19px;
+      }
     }
 
     &Content {
@@ -51,20 +66,35 @@
       background: rgba(255, 255, 255, 0.10);
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
-    
+
 
     }
 
     &Title {
       letter-spacing: 0.48px;
       transition: opacity .2s linear;
-   
+
+      @media(max-width: 1199px) {
+        font-size: 21px;
+        line-height: 30px;
+      }
+      @media(max-width: 991px){
+        font-size: 18px;
+        line-height: 21px;
+      }
+
       &:hover {
         opacity: .8;
       }
     }
   }
 }
+
 .events {
   padding-bottom: 120px;
+
+  @media(max-width: 991px) {
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
 }

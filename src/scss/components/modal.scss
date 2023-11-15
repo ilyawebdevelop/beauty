@@ -14,6 +14,11 @@
   &-title {
     font-size: 23px;
   }
+  .sectionTitle {
+    @media(max-width: 350px){
+      font-size: 17px;
+    }
+  }
 }
 
 .modalNews {
@@ -21,6 +26,13 @@
     padding: 40px 33px 65px 39px;
     border-radius: 40px;
     border: none;
+    overflow: hidden;
+    @media(max-width: 1199px){
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+      padding-bottom: 30px;
+    }
   }
 
   &Title {
@@ -40,6 +52,11 @@
     margin-top: 30px;
     display: grid;
     grid-template-columns: 360px auto;
+    @media(max-width: 1199px){
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+      margin-top: 0;
+    }
   }
   &Img {
     border-radius: 40px;
@@ -47,6 +64,10 @@
     height: 360px;
     object-fit: cover;
     object-position: center;
+    @media(max-width: 1199px){
+      border-radius: 0;
+      height: 80vw;
+    }
   }
 
   .btn-close {
@@ -60,6 +81,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+    img {
+      width: 24px;
+      @media(max-width: 1199px){
+        width: 24px;
+      }
+    }
+    @media(max-width: 1199px){
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      width: 24px;
+      padding: 0;
+
+    }
 
     img {
       width: 20px;
@@ -68,13 +104,24 @@
     &:hover {
       background-color: #D8835E;
       opacity: 1;
+      @media(max-width: 1199px){
+        background-color: transparent;
+      }
     }
   }
   .contentText {
     padding-left: 40px;
     padding-right: 40px;
+    @media(max-width: 1199px){
+      padding-left: 30px;
+      padding-right: 30px;
+    }
     p {
       color: #000;
+      @media(max-width: 991px){
+        font-size: 13px;
+        line-height: 19px;
+      }
     }
     a {
       color: #069;
@@ -89,6 +136,9 @@
 
 .modalHead {
   max-width: 880px;
+  @media(max-width: 991px){
+    max-width: 100%;
+  }
 }
 .modalOrder {
   &Descr {
@@ -97,6 +147,11 @@
     letter-spacing: 0.48px;
     line-height: 29px;
     margin-bottom: 40px;
+    @media(max-width: 991px){
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 15px;
+    }
   }
   &Content {
     background-color: #000;
@@ -105,6 +160,13 @@
     padding-right: 160px;
     padding-bottom: 55px;
     padding-top: 40px;
+    @media(max-width: 767px){
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 20px;
+      padding-bottom: 15px;
+      border-radius: 20px;
+    }
   }
   .modal-dialog {
     max-width: 800px;
@@ -132,6 +194,10 @@
     top: 25px;
     transition: background-color .2s linear;
     box-sizing: border-box;
+    @media(max-width: 767px){
+      top: 15px;
+      right: 15px;
+    }
     &:hover {
       background-color: #D8835E;
     }

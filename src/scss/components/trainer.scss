@@ -1,20 +1,57 @@
 .trainer {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media(max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  &Head {
+    h4 {
+      @media(max-width: 1199px){
+        font-size: 21px;
+        line-height: 24px;
+      }
+      @media(max-width: 991px){
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+  }
   &Slider {
     margin-top: 40px;
     overflow: visible;
+    @media(max-width: 991px){
+      margin-top: 0;
+    }
+    @media(max-width: 575px){
+      padding-right: 60px;
+    }
   }
   &Slide {
     height: auto;
     display: grid;
     grid-template-rows: 350px auto;
+    @media(max-width: 575px){
+      grid-template-rows: 90vw auto;
+    }
     &Img {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
       height: 350px;
       width: 100%;
       object-fit: cover;
+      @media(max-width: 575px){
+        height: 90vw;
+      }
+    }
+    &Title {
+      @media(max-width: 1199px){
+        font-size: 21px;
+        line-height: 25px;
+      }
+      @media(max-width: 991px){
+        font-size: 18px;
+      }
     }
 
     &Content {
@@ -22,7 +59,15 @@
       background: rgba(255, 255, 255, 0.10);
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
-   
+      @media(max-width: 767px){
+        padding: 20px;
+      }
+   p {
+    @media(max-width: 575px){
+      font-size: 13px;
+      line-height: 19px;
+    }
+   }
     }
   }
 }

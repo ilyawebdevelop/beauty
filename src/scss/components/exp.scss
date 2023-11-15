@@ -1,4 +1,10 @@
 .exp {
+  @media(max-width: 991px){
+    padding-bottom: 20px;
+  }
+  @media(max-width: 575px){
+    padding-bottom: 10px;
+  }
   &Title {
     max-width: 500px;
   }
@@ -11,6 +17,22 @@
     min-height: 308px;
     font-size: 21px;
     line-height: 31px;
+    @media(max-width: 1199px){
+      padding-bottom: 30px;
+      padding-top: 30px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    @media(max-width: 991px){
+      min-height: auto;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 400;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
     span {
       color: #000;
     }
@@ -19,8 +41,14 @@
   &Nav {
     column-gap: 20px;
     display: flex;
+    @media(max-width: 575px){
+      display: none;
+    }
     &W {
       margin-top: 18px;
+      @media(max-width: 991px){
+        margin-top: 16px;
+      }
     }
     &Title {
       font-style: italic;
@@ -28,6 +56,20 @@
       color: #D8835E;
       font-size: 21px;
       line-height: 31px;
+      @media(max-width: 991px){
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  &Slider {
+    @media(max-width: 991px){
+      margin-bottom: 30px;
+    }
+    @media(max-width: 575px){
+      padding-right: 60px;
+      overflow: visible;
+      padding-left: 20px;
     }
   }
   &Slide {
@@ -36,6 +78,9 @@
       width: 100%;
       object-fit: cover;
       border-radius: 20px;
+      @media(max-width: 575px){
+        height: 55vw;
+      }
     }
   }
 }

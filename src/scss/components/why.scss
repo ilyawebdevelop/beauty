@@ -1,5 +1,42 @@
 .why {
+  @media(max-width: 991px){
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
   &Head {
     margin-bottom: 40px;
+    @media(max-width: 991px){
+      margin-bottom: 30px;
+    }
+    h4 {
+      @media(max-width: 991px){
+        font-weight: 400;
+      }
+    }
+  }
+  .sectionTitle {
+    @media(max-width: 575px){
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+  .contentCard {
+    p {
+      @media(max-width: 991px){
+        font-size: 13px;
+        line-height: 19px;
+      }
+    }
+  }
+  .contentText {
+    margin-top: 40px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    span {
+      color: #D8835E;
+    }
   }
 }

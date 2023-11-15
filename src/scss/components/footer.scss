@@ -12,9 +12,19 @@
   h4 {
     color: #000;
     margin-bottom: 18px;
+    @media(max-width: 991px){
+      font-size: 21px;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
   }
   h5 {
     color: #000;
+    @media(max-width: 991px){
+      font-size: 18px;
+      line-height: 120%;
+      
+    }
   }
   &Contacts {
     font-size: 13px;
@@ -28,6 +38,9 @@
     &List {
       display: flex;
       column-gap: 10px;
+      @media(max-width: 575px){
+        justify-content: center;
+      }
     }
     &Link {
       width: 44px;
@@ -46,6 +59,10 @@
   .linkText {
     font-size: 13px;
     line-height: 150%;
+    @media(max-width: 575px){
+      margin-left: auto;
+      margin-right: auto;
+    }
     
   }
 }

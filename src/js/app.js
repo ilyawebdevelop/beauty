@@ -25,14 +25,18 @@ var mySwiperExp = new Swiper(expSlider, {
   spaceBetween: 0,
   loop: false,
   speed: 600,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
   allowTouchMove: true,
   navigation: {
     nextEl: '.exp .navArrowNext',
     prevEl: '.exp .navArrowPrev',
+  },
+  breakpoints: {
+    0: {
+      spaceBetween: 20,
+    },
+    576: {
+      spaceBetween: 0,
+    },   
   },
 });
 
@@ -48,8 +52,8 @@ document.querySelectorAll('.newsSliderW').forEach(n => {
       },
       576: {
         slidesPerView: 2,
-      },
-      768: {
+      },     
+      992: {
         slidesPerView: 3,
       },
     },
@@ -65,11 +69,15 @@ var mySwiperTrainer = new Swiper(trainerSlider, {
   breakpoints: {
     0: {
       slidesPerView: 1,
+      spaceBetween: 20,
     },
     576: {
       slidesPerView: 2,
     },
     768: {
+      slidesPerView: 2,
+    },
+    992: {
       slidesPerView: 3,
     },
   },
@@ -98,7 +106,7 @@ document.addEventListener('click', function (e) {
 
   if (!its_headerCatalogBtn && !its_CatalogContent) {
     headerCatalog.classList.remove('active');
-      headerCatalogBtn.classList.remove('active');
-      bodyEl.classList.remove('hidden');
+    headerCatalogBtn.classList.remove('active');
+    bodyEl.classList.remove('hidden');
   }
 });
