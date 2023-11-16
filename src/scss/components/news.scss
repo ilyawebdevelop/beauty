@@ -1,6 +1,7 @@
 .newsSliderW {
   padding-bottom: 60px;
   padding-top: 60px;
+  overflow: hidden;
   @media(max-width: 991px){
     padding-bottom: 35px;
   }
@@ -92,6 +93,7 @@
 
 .events {
   padding-bottom: 120px;
+  overflow: hidden;
 
   @media(max-width: 991px) {
     padding-top: 25px;

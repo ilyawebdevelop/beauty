@@ -12,11 +12,11 @@ import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumb
 Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar]);
 
 
-var paralaxImage = document.querySelector('.introImage');
-new simpleParallax(paralaxImage, {
-  scale: 1.1,
-  customWrapper: '.intro',
-});
+// var paralaxImage = document.querySelector('.introImage');
+// new simpleParallax(paralaxImage, {
+//   scale: 1.1,
+
+// });
 
 // Инициализация слайдера expSlider
 const expSlider = document.querySelector('.expSlider');

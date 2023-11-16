@@ -1,6 +1,8 @@
 .intro {
   padding-top: 117px;
   background-color: #000;
+  position: sticky;
+  top: 0;
   @media(max-width: 991px){
     padding-top: 90px;
     padding-bottom: 25px;
