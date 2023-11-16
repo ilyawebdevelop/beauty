@@ -12493,29 +12493,34 @@ h5 {
   font-size: 21px;
   line-height: 25px;
 }
-.typeAnother::before {
-  content: "";
+.typeAnother .absolute {
+  position: sticky;
+  top: 185px;
+}
+@media (max-width: 991px) {
+  .typeAnother .absolute {
+    position: unset;
+  }
+}
+.typeAnother .typeAnotherSticky {
   position: absolute;
-  bottom: calc(100% - 254px);
-  left: 0;
-  width: 300px;
-  height: 336px;
-  background: url("../img/admin/type/hand.png") no-repeat center center/contain;
+  top: -73px;
 }
 @media (max-width: 1500px) {
-  .typeAnother::before {
+  .typeAnother .typeAnotherSticky {
     width: 200px;
     height: 200px;
     background-position: left center;
-    bottom: calc(100% - 149px);
   }
 }
-@media (max-width: 767px) {
-  .typeAnother::before {
-    bottom: calc(100% - 189px);
+@media (max-width: 991px) {
+  .typeAnother .typeAnotherSticky {
+    position: absolute;
+    bottom: unset;
+    top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .typeAnother {
     padding-top: 120px;
   }
@@ -12534,9 +12539,6 @@ h5 {
   }
 }
 
-.advantages {
-  padding-top: 0;
-}
 @media (max-width: 991px) {
   .advantages {
     padding-bottom: 0;
