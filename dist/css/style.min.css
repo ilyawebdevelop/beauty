@@ -11885,8 +11885,9 @@ h5 {
   }
 }
 .solutionImage {
-  height: 638px;
-  position: relative;
+  height: calc(100vh - 94px);
+  position: sticky;
+  top: 94px;
 }
 @media (max-width: 991px) {
   .solutionImage {
@@ -11913,8 +11914,6 @@ h5 {
 }
 .solutionContent {
   padding-top: 33px;
-  height: 635px;
-  overflow-y: scroll;
 }
 @media (max-width: 991px) {
   .solutionContent {

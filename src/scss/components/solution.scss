@@ -2,16 +2,21 @@
   padding-top: 0;
   padding-bottom: 0;
   background: rgba(255, 255, 255, 0.10);
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     background: transparent;
   }
+
   &Image {
-    height: 638px;
-    position: relative;
-    @media(max-width: 991px){
+    // height: 638px;
+    height: calc(100vh - 94px);
+    position: sticky;
+    top: 94px;
+
+    @media(max-width: 991px) {
       height: auto;
     }
-   
+
     img {
       border-radius: 0px 20px 20px 0px;
       height: 100%;
@@ -21,7 +26,8 @@
       position: absolute;
       right: 0;
       top: 0;
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         min-width: unset;
         border-radius: 20px;
         height: 60vw;
@@ -29,11 +35,13 @@
       }
     }
   }
+
   &Content {
     padding-top: 33px;
-    height: 635px;
-    overflow-y: scroll;
-    @media(max-width: 991px){
+
+    // height: 635px;
+    // overflow-y: scroll;
+    @media(max-width: 991px) {
       background: rgba(255, 255, 255, 0.10);
       border-radius: 20px;
       height: auto;
@@ -43,18 +51,22 @@
       padding-bottom: 40px;
     }
   }
+
   &Text {
     margin-top: 30px;
     color: #FEFAF8;
+
     span {
       color: #D8835E;
     }
   }
+
   .contentCard {
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 20px;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       margin-bottom: 10px;
     }
   }
@@ -68,6 +80,7 @@
   /* высота для горизонтального скролла */
   background: rgba(85, 85, 85, 0.05);
 }
+
 /* ползунок скроллбара */
 .solutionContent::-webkit-scrollbar-thumb {
   background: rgba(85, 85, 85, 0.2);
@@ -79,4 +92,5 @@
 .solutionContent::-webkit-scrollbar-thumb:hover {
   background-color: #253861;
 }
+
 // solutionContent
